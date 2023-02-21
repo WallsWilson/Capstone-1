@@ -1,0 +1,19 @@
+Jordan Walls-Wilson
+Capstone Project
+
+		Proposal Ideas
+
+
+	So I am juggling be tween a few ideas and may even land on something totally different than my original idea. I have some thoughts on using a Call of Duty API(https://github.com/TodoLodo/cod-python-api#modernwarfare2), a flight API(https://developers.amadeus.com/self-service/category/air/api-doc/flight-offers-search?ref=apilist.fun), or I also had a later idea of doing something with cruise ships and booking and planning which could build a tool to help you find crushes cheaper and connect multiple back to back sailing(I am unable to find anything with this function or cruise ships in general. I was thinking of trying something myself using a popular cruise line but am not having luck on where to start.)
+
+1. So the goal with my Call of Duty idea will to have a place where me and my friends can make challenges to each other and track each others progress on specific stats that the main in game leaderboards do not track. The idea to pull star that don't really matter just to try and have fun with them. May develop this into a drinking game of some sorts that we can play all together.
+With the flight finder, there are a ton of tools out there that you can do this with. My goal is to try and create something for myself and family that does not push any bloat on you or ads that are not needed. I just want a simple way to find a flight against all the different airlines. The goal of this is to be very simple and something I would use in the long term The Call of Duty board my be short lived. I enjoy to travel and can spend a ton of time searching flights. Would like a better way to do this. 
+
+2. Both of these apps are designed for me and friends. With Call of Duty I will be taking ideas from friends and making a way to see what stats my friends may want to track that may be absolutely pointless, which is why they are not in game, but to create dumb challenges that we can play against each other in online games when we all play. This may not be for everyone but I think there is a place for gamers when they get bored and just want to play around. 
+They flights will be for the budget traveler looking for the best deals. As I said before there is many tools like this. Most do not use all airlines and have tons of ADs pushing all the time. I would want something simple that my family and I can get some use out of. This WILL be simple on purpose. I do not want too many options. I want a quick search to help me track down the cheapest flight with the best flight times. 
+
+3.The Call of Duty too will have a main focus on stuff that you don't find in game. That is he idea. I will want to incl some stuff that is very common, but mostly stays that no one really cares about so we can develop some fun with it. This is more open idea that may end up not being anything I want it to be. For me the hope is to get some feedback from friends and have some fun with it. 
+With my flight app, this will focus on the basics, airline, price, time, and date. I like this idea as it has a ton of options that I can add more to it and even create more branches to it. 
+
+4. Call of Duty- This will have some challenges. I can not get a clear idea on how I want to display. I was think I could display each person gamertag and show which stats I want to display on a table or display them all at once and add or take away the ones that are not needed or to much when I get feedback. This may need to actually log in each user to allow the data to be displayed. This will make me need some security on the backend.
+Flights is simple and does not need any logins. Will use some cookies so you don't need to reset preferences every time the page refreshes. This is just a GET Request and may not need any POST or login info. As I use this more I may need to use this differently. But at this time that is the basics. 
