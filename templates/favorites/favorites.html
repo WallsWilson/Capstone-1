@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block body_class %}Favorite Drink List{% endblock %}
+
+{% block content %}
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="card user-card">
+            <div class="card-inner">
+              <class="card-hero">
+              </div>
+              <div class="card-contents">
+                <p><b>{{ cocktail.name.upper() }}</b></p>
+                <p>Ingredients</p>
+                <p>{{ cocktail.ingredients }}</p>
+                {% if g.user.does_fav(favorite_drink) %}
+                  <form method="POST"
+                        action="/drink/{{ drink_id }}/remove">
+                    <button class="btn btn-primary btn-sm">Un-Fav</button>
+                  </form>
+                {% else %}
+                  <form method="POST" action="/drink/{{ drink_id }}/fav">
+                    <button class="btn btn-outline-primary btn-sm">Fav</button>
+                  </form>
+                {% endif %}
+
+              </div>
+              <p class="card-bio">{{ cocktail.instructions }}</p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block body_class %}Cocktail Search Results{% endblock %}
+
+{% block content %}
+
+    <h1>Cocktail Search Results</h1>
+    {% if data %}
+        <ul>
+        {% for cocktail in data %}
+            <li><b>{{ cocktail.name.upper() }}</b></li>
+            <li>{{ cocktail.ingredients }}</li>  
+            <li>{{ cocktail.instructions }}</li>   
+            {% endfor %}
+        </ul>
+    {% else %}
+        No results found.
+    {% endif %}
+{% endblock %}
