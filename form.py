@@ -15,6 +15,8 @@ class LoginFrom(FlaskForm):
     password = PasswordField('Password', validators=[Length(min=6)])
 
 class DrinkAddForm(FlaskForm):
+    """Form to add a Drink and its recipe. This was not brough into the app yet."""
+
     drink_name = StringField('Drink Name')
     ingredients = StringField('Ingredients')
     instructions = StringField('Instructions')

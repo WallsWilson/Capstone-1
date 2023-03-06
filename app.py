@@ -53,6 +53,9 @@ def index():
 
 @app.route('/search', methods=['POST'])
 def search():
+
+    """Search from the API to retrive a drinks name, recipe, and ingreidnets. Also allows you to search using specific ingredients. Ex. Vodka"""
+
     name = request.form['name']
     ingredients = request.form['ingredients']
 
@@ -114,11 +117,15 @@ def add_fav(drink_id):
 
 @app.route('/drink/<int:drink_id>', methods=['GET'])
 def drink_show(drink_id):
+    """Store the drink and giving it a drink_id for the database."""
+
     drk = Drinks.query.get_or_404(drink_id)
     return render_template('drink/show.html', drinks = drk)
 
 @app.route('/drink/<int:drink_id>/remove', methods=["POST"])
 def remove_drink(drink_id):
+    """Removing drink from the favs. """
+
     if not g.user:
         flash("Please log in to remove a drink.", "Danger")
         return redirect('/')
