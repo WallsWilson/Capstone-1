@@ -3,16 +3,22 @@
 {% block body_class %}Cocktail Search{% endblock %}
 
 {% block content %}
-
-    <h1>Search for a Cocktail</h1>
-    <form method="POST" action="/search">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
+<div class="container-fluid">
+    <div class="row align-items-center pt-5 pb-5 mt-5 mb-5">
+        <div class="col">
+        </div>
+        <div class="col-6">
+        <h1 class="text-warning text-center mt-2 mb-2">Search for a Cocktail</h1>
+        <p class="text-black text-center m-4">Search for you favorite drink, ingredients, or liqour to find recipes with those items.</p>
+    <form method="POST" class="text-center mt-3" action="/search">
+        <input type="text" id="name" class="text-center form-control form-control-lg" name="name" placeholder="Drink Name">
         <br>
-        <label for="ingredients">Ingredients:</label>
-        <input type="text" id="ingredients" name="ingredients">
+        <input type="text" id="ingredients" class="text-center form-control form-control-lg" name="ingredients" placeholder="Ingredients or Liquor">
         <br>
-        <input type="submit" value="Search">
+        <input type="submit" class="btn btn-danger btn-lg btn-block m-2" value="Search">
     </form>
+    </div>
+    <div class="col">
+    </div>
+</div>
 {% endblock %}
-

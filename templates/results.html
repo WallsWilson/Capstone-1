@@ -3,17 +3,55 @@
 {% block body_class %}Cocktail Search Results{% endblock %}
 
 {% block content %}
-
-    <h1>Cocktail Search Results</h1>
+<div class="row">
+    <div class="col">
+    </div>
+    <div class="col">
+    <h1 class="text-center m-3 text-black">Cocktail Results</h1>
     {% if data %}
         <ul>
         {% for cocktail in data %}
-            <li><b>{{ cocktail.name.upper() }}</b></li>
-            <li>{{ cocktail.ingredients }}</li>  
-            <li>{{ cocktail.instructions }}</li>   
+        <div class="card text-center m-3 bg-warning" style="width: 50rem;">
+            <div class="card-body">
+                <h3 class="text-center text-danger">{{ cocktail.name.upper() }}</h3>
+              <h6 class="card-subtitle mb-2 text-secondary">{{ cocktail.ingredients }}</h6>
+              <p class="card-text text-black">{{ cocktail.instructions }}</p>
+            </div>
+          </div>  
             {% endfor %}
         </ul>
     {% else %}
         No results found.
     {% endif %}
+    </div>
+    <div class="col">
+      </div>
+</div>
 {% endblock %}
+
+<div class="row">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col">
+      2 of 3
+    </div>
+    <div class="col">
+      3 of 3
+    </div>
+  </div>
+</div>
+
+
+  <!-- <h1>Cocktail Search Results</h1>
+  {% if data %}
+      <ul>
+      {% for cocktail in data %}
+          <li><b>{{ cocktail.name.upper() }}</b></li>
+          <li>{{ cocktail.ingredients }}</li>  
+          <li>{{ cocktail.instructions }}</li>   
+          {% endfor %}
+      </ul>
+  {% else %}
+      No results found.
+  {% endif %} -->

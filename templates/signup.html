@@ -5,9 +5,9 @@
 {% block content %}
 
   <div class="row justify-content-md-center">
-  <div class="col-md-7 col-lg-5">
-    <h2 class="join-message">Join today.</h2>
-    <form method="POST" id="user_form">
+  <div class="col-md-7 col-lg-5 align-items-center pt-5 pb-5 mt-5 mb-5">
+    <h2 class="join-message text-center">Join today.</h2>
+    <form method="POST" class="text-center m-5" id="user_form">
       {{ form.hidden_tag() }}
 
       {% for field in form if field.widget.input_type != 'hidden' %}
@@ -17,7 +17,7 @@
         {{ field(placeholder=field.label.text, class="form-control") }}
       {% endfor %}
 
-      <button class="btn btn-primary btn-lg btn-block">Sign me up!</button>
+      <button class="btn btn-danger btn-lg btn-block m-5">Sign me up!</button>
     </form>
   </div>
 </div>
